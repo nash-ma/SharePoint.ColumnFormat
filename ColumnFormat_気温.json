@@ -1,21 +1,21 @@
 {
-    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
-    "elmType": "div",
-    "children": [
-      {
-        "elmType": "span",
-        "txtContent": "@currentField",
-        "style": {
-          "padding-left": "8px",
-          "white-space": "nowrap"
-        }
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "span",
+      "txtContent": "@currentField",
+      "style": {
+        "padding-left": "8px",
+        "white-space": "nowrap"
       }
-    ],
-    "attributes": {
-      "class": "sp-field-dataBars"
-    },
-    "style": {
-      "padding": "0",
-      "width": "=if(@currentField >= 40, '100%', (@currentField * 2.5) + '%')"
     }
+  ],
+  "attributes": {
+    "class": "sp-field-dataBars"
+  },
+  "style": {
+    "padding": "0",
+    "width": "=if(@currentField >= 40, '100%', (@currentField * 2.5) + '%')"
   }
+}
