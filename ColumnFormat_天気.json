@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "debugMode": true,
+  "txtContent": "@currentField",
+  "style": {
+    "color": "=if(@currentField == '晴れ', '#ffd700', if(@currentField == '曇り', '#c0c0c0', if(@currentField == '雨', '#228b22', if(@currentField == '雪', '#4b0082', ''))))"
+  },
+  "attributes": {
+    "iconName": "=if(@currentField == '晴れ', 'Sunny', if(@currentField == '曇り', 'Cloudy', if(@currentField == '雨', 'Rain', if(@currentField == '雪', 'Snowflake', ''))))"
+  }
+}
